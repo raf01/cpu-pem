@@ -1,0 +1,10 @@
+module cpupem (SW, KEY);
+	reg [7:0] ledsSaida;
+	reg [7:0] dataIn;
+	reg [3:0] address;
+	reg writeEnable, clock;
+	reg [7:0] mem [15:0];
+
+	ram mRAM (.*);
+
+endmodule
