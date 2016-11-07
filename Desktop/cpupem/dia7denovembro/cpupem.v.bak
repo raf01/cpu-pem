@@ -1,0 +1,11 @@
+module ucontrol(op_end, adress);
+
+input [7:0]op_end;
+
+output [3:0]opcode;
+output [3:0]adress;
+
+assign opcode[3:0] = op_end[3:0];
+assign adress[3:0] = op_end[7:4];
+	
+	
